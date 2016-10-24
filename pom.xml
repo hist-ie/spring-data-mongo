@@ -101,6 +101,11 @@
 			<version>3.3.0</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>bson</artifactId>
+			<version>3.2.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.aspectj</groupId>
@@ -134,4 +139,22 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>nexus-release</id>
+			<name>Private Nexus Release Repository</name>
+			<url>http://cloud.hist.edu.cn:20010/nexus/content/groups/public/</url>
+		</repository>
+	</repositories>
+
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus-plugin</id>
+			<name>Private Nexus Plugin Repository</name>
+			<url>http://cloud.hist.edu.cn:20010/nexus/content/groups/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
 </project>
